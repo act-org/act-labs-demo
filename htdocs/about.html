@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+    <title>ACT Labs Demo</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+	<script src="assets/js/Chart.js"></script>
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">ACT<i class="fa fa-circle"></i>LABS</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">HOME</a></li>
+            <li class="active"><a href="about.html">ABOUT</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="works.html">LABS</a></li>
+            <li><a data-toggle="modal" data-target="#myModal" href="#myModal"><i class="fa fa-envelope-o"></i></a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+	<div id="blue">
+		<div class="container">
+			<div class="row centered">
+				<div class="col-lg-8 col-lg-offset-2">
+				<h4>ACT LABS LEADERSHIP</h4>
+				<p>Making it happen...</p>
+				</div>
+			</div><!-- row -->
+		</div><!-- container -->
+	</div><!--  bluewrap -->
+
+
+	<div class="container w">
+		<div class="row centered">
+			<br><br>
+			<div class="col-lg-3">
+				<img class="img-circle" src="assets/img/pic.jpg" width="110" height="110" alt="">
+				<h4>L. Miguel Encarnação</h4>
+				<p>Chief Innovation Officer, ACT, Inc. - Helping people unlock their inner genius to achieve education and workplace success - one innovation at a time.</p>
+				<p><a href="#">@mencarna</a></p>
+			</div><!-- col-lg-3 -->
+
+			<div class="col-lg-3">
+				<img class="img-circle" src="assets/img/pic2.jpg" width="110" height="110" alt="">
+				<h4>Bo Brock</h4>
+				<p>Manager, Innovation at ACT</p>
+				<p><a href="#">Bo.Brock@act.org</a></p>
+			</div><!-- col-lg-3 -->
+
+			<div class="col-lg-3">
+				<img class="img-circle" src="assets/img/pic3.jpg" width="110" height="110" alt="">
+				<h4>Matt Arnold</h4>
+				<p>Innovative user experience and online marketing communication expert, with over 15 years of experience in leading successful teams and projects.</p>
+				<p><a href="#">Matt.Arnold@act.org</a></p>
+			</div><!-- col-lg-3 -->
+
+			<div class="col-lg-3">
+				<img class="img-circle" src="assets/img/pic4.jpg" width="110" height="110" alt="">
+				<h4>Derek Darby</h4>
+				<p>Specialize in UX interaction design for large-scale applications, visual design and client-side development.</p>
+				<p><a href="#">Derek.Darby@act.org</a></p>
+			</div><!-- col-lg-3 -->
+
+		</div><!-- row -->
+		<br>
+		<br>
+	</div><!-- container -->
+
+
+	<!-- PORTFOLIO SECTION -->
+	<div id="dg">
+		<div class="container">
+			<div class="row centered">
+				<h4>LAB CAPABILITIES</h4>
+				<br>
+				
+			<!-- First Chart -->
+			<div class="col-lg-3">
+				<canvas id="canvas" height="130" width="130"></canvas>
+				<br>
+				<script>
+					var doughnutData = [
+							{
+								value: 80,
+								color:"#3498db"
+							},
+							{
+								value : 20,
+								color : "#ecf0f1"
+							}
+						];
+						var myDoughnut = new Chart(document.getElementById("canvas").getContext("2d")).Doughnut(doughnutData);
+				</script>
+				<p><b>Design & Brand</b></p>
+				<p><small>ACT Labs offers an emerging set of designs and elements to structure brand content.</small></p>
+			</div><!-- /col-lg-3 -->
+
+			<!-- Second Chart -->
+			<div class="col-lg-3">
+				<canvas id="canvas2" height="130" width="130"></canvas>
+				<br>
+				<script>
+					var doughnutData = [
+							{
+								value: 60,
+								color:"#3498db"
+							},
+							{
+								value : 40,
+								color : "#ecf0f1"
+							}
+						];
+						var myDoughnut = new Chart(document.getElementById("canvas2").getContext("2d")).Doughnut(doughnutData);
+				</script>
+				<p><b>Web Development</b></p>
+				<p><small>There are many platforms for hosting web solutions: PHP, Wordpress, Drupal, Ruby, Java, Node.JS, etc.</small></p>
+			</div><!-- /col-lg-3 -->
+			
+			<!-- Third Chart -->
+			<div class="col-lg-3">
+				<canvas id="canvas3" height="130" width="130"></canvas>
+				<br>
+				<script>
+					var doughnutData = [
+							{
+								value: 95,
+								color:"#3498db"
+							},
+							{
+								value : 05,
+								color : "#ecf0f1"
+							}
+						];
+						var myDoughnut = new Chart(document.getElementById("canvas3").getContext("2d")).Doughnut(doughnutData);
+				</script>
+				<p><b>Innovation</b></p>
+				<p><small>ACT Labs specializes in helping you to innovate with your ideas.</small></p>
+			</div><!-- /col-lg-3 -->
+			
+			<!-- Fourth Chart -->
+			<div class="col-lg-3">
+				<canvas id="canvas4" height="130" width="130"></canvas>
+				<br>
+				<script>
+					var doughnutData = [
+							{
+								value: 20,
+								color:"#3498db"
+							},
+							{
+								value : 80,
+								color : "#ecf0f1"
+							}
+						];
+						var myDoughnut = new Chart(document.getElementById("canvas4").getContext("2d")).Doughnut(doughnutData);
+				</script>
+				<p><b>Mobile</b></p>
+				<p><small>We are just beginning to offer structure to mobile solutions.</small></p>
+			</div><!-- /col-lg-3 -->
+				
+				
+			</div><!-- row -->
+		</div><!-- container -->
+	</div><!-- DG -->
+
+
+
+	
+	<div id="r">
+		<div class="container">
+			<div class="row centered">
+				<div class="col-lg-8 col-lg-offset-2">
+					<h4>WE ARE DESIGNERS, CONTENT SPECIALISTS AND TECHNOLOGISTS. LABS ARE OUR IDEAS. INNOVATION IS OUR VOICE.</h4>
+					<p>Our Mission: "Helping people achieve education and workplace success."</p>
+				</div>
+			</div><!-- row -->
+		</div><!-- container -->
+	</div><! -- r wrap -->
+	
+	
+	<!-- FOOTER -->
+	<div id="f">
+		<div class="container">
+			<div class="row centered">
+				<a href="https://twitter.com/ACT"><i class="fa fa-twitter"></i></a><a href="https://www.facebook.com/theacttest"><i class="fa fa-facebook"></i></a><a href="http://act.org"><i class="fa fa-dribbble"></i></a>
+		
+			</div><!-- row -->
+		</div><!-- container -->
+	</div><!-- Footer -->
+
+	<!-- MODAL FOR CONTACT -->
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	        <h4 class="modal-title" id="myModalLabel">contact us</h4>
+	      </div>
+	      <div class="modal-body">
+		        <div class="row centered">
+		        	<p>Our National Office is in Iowa City, IA USA. </p>
+		        	<p>
+						ACT National Office<br>
+						500 ACT Drive<br>
+						P.O. Box 168<br>
+						Iowa City, IA 52243-0168<br>
+						319.337.1000
+		        	</p>
+		        	<div id="mapwrap">
+		<iframe height="300" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=500+Act+Drive,+Iowa+City,+IA&hl=en&sll=41.647053,-91.539363&sspn=0.149312,0.285645&oq=500+ACT+Drive&hnear=500+Act+Dr,+Iowa+City,+Iowa+52243&t=m&z=16&output=embed"></iframe>
+					</div>	
+		        </div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-danger" data-dismiss="modal">Save & Go</button>
+	      </div>
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+	
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
