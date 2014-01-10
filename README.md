@@ -3,7 +3,7 @@ act-labs-demo
 
 Sample ACT Labs PHP website
 
-* cf clone https://github.com/spolyak/act-labs-demo.git
+* git clone https://github.com/spolyak/act-labs-demo.git
 * get a cf account
 * download cf tools
 * rm manifest.yml
